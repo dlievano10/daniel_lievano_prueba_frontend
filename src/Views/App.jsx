@@ -1,5 +1,6 @@
 // Components
 import Header from "../Components/Headers/Header";
+import Slide from "../Components/Slide/Slide";
 
 // Styles
 import "./styles.scss";
@@ -36,6 +37,11 @@ function App () {
                 <div className="segunda-division">
                     <img src="https://via.placeholder.com/300x800" width='100%' height='100%' />
                 </div>
+            </div>
+
+            {/* Slider infinite */}
+            <div className="seccion-slide">
+                <Slide />
             </div>
         </>
     );
