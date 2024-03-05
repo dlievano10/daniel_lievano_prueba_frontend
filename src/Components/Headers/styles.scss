@@ -1,0 +1,94 @@
+@import '../../style-general.scss';
+
+.menu {
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    position: relative;
+    color: #bbb;
+}
+
+.menu-2 {
+    position: relative;
+}
+
+.menu>span:hover {
+    color: $color-white;
+    border-bottom: 2px solid $color-white;
+    transition: 1s ease;
+}
+
+.header {
+    font-family: 'Roboto';
+    text-align: center;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(1.25rem, 100%), 1fr));
+}
+
+.header>span {
+    color: #bbb;
+    cursor: pointer;
+    width: 100%;
+    display: block;
+    
+}
+
+.header>span:hover {
+    color: white;
+    border-bottom: 2px solid $color-white;
+    transition: 1s ease;
+}
+
+.spacer-header {
+    flex: 1 1 0%;
+    place-self: stretch;
+}
+
+.desplegable {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid white;
+}
+
+.menu:hover .submenu {
+    display: block;
+    transition: 1s ease;
+}
+
+.menu-2:hover .submenu-2 {
+    transition: 1s ease;
+    display: block;
+}
+
+.submenu-2 {
+    border-radius: 10px;
+    transition: 1s ease;
+    display: none;
+    text-align: left;
+    top: 100%;
+    left: 0;
+    background-color: #3C5973;
+    list-style: none;
+    margin: 0;
+}
+
+.submenu {
+    border-radius: 10px;
+    transition: 1s ease;
+    display: none;
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    z-index: 2;
+    left: 0;
+    background-color: #3C5973;
+    padding: 10px;
+    list-style: none;
+    margin: 0;
+}
+
+.submenu li {
+    margin-bottom: 5px;
+}

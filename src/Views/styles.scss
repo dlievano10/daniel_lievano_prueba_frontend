@@ -1,0 +1,150 @@
+@import '../style-general.scss';
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.divider-banner {
+    position: relative;
+    display: flex;
+    height: 800px;
+};
+
+.primera-division {
+    padding: 50px;
+    background-color: $color-primary;
+    width: 70%;
+}
+
+.segunda-division {
+    width: 30%;
+    animation: fadeIn 2s ease-in-out;
+    position: relative;
+}
+
+.button-banner {
+    border-radius: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    background-color: $color-secundary;
+    color: $color-primary;
+    margin-top: 50px;
+    font-family: 'Roboto';
+    border: 2px solid $color-secundary;
+    cursor: pointer;
+    display: flex;
+}
+
+.button-banner:hover {
+    border: 2px solid $color-secundary;
+    color: $color-secundary;
+    background-color: transparent;
+}
+
+.spacer-button {
+    flex: 1 1 0%;
+    width: 40px;
+    place-self: stretch;
+}
+
+.texto {
+    color: $color-white;
+    position: absolute;
+    bottom: 10%;
+}   
+
+.texto>h1 {
+    font-weight: lighter;
+    font-size: 70px;
+    line-height: 50px;
+}
+
+.texto>h2 {
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.segunda-division {
+    position: relative;
+    width: 30%;
+    height: 800px;
+}
+
+.seccion-slide {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.rows-forms {
+    background-color: #dcdcdc;
+    padding: 50px;
+    display: grid;
+    grid-gap: 80px;
+    grid-template-columns: repeat(auto-fit, minmax(min(11.25rem, 100%), 1fr));
+}
+
+@media screen and (max-width: $breakpoint-tablet) {
+    .primera-division {
+        padding: 20px;
+        width: auto;
+    }
+
+    .divider-banner {
+        height: 400px;
+        display: block;
+    };
+
+    .texto {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        position: initial;
+    }   
+
+    .button-banner {
+        padding: 5px;
+        width: 50%;
+    }
+
+    .texto>h1 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    
+    .texto>h2 {
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .texto>p {
+        font-size: 10px;
+    }
+
+    .segunda-division {
+        width: 100%;
+        height: 150px;
+    }
+
+    .submenu {
+        width: 150%;
+    }
+
+    .submenu-2 {
+        padding-inline-start: 15px;
+    }
+};
