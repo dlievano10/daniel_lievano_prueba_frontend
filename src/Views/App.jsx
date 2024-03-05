@@ -1,5 +1,6 @@
 // Components
 import Header from "../Components/Headers/Header";
+import Footer from "../Components/Footer/Footer";
 import Slide from "../Components/Slide/Slide";
 import Forms from "../Components/Forms/Forms";
 
@@ -49,6 +50,9 @@ function App () {
             <div className='rows-forms'>
                 <Forms />
             </div>
+
+            {/* Footer */}
+            <Footer />
         </>
     );
 }
