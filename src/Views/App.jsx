@@ -1,6 +1,7 @@
 // Components
 import Header from "../Components/Headers/Header";
 import Slide from "../Components/Slide/Slide";
+import Forms from "../Components/Forms/Forms";
 
 // Styles
 import "./styles.scss";
@@ -42,6 +43,11 @@ function App () {
             {/* Slider infinite */}
             <div className="seccion-slide">
                 <Slide />
+            </div>
+
+            {/* Forms */}
+            <div className='rows-forms'>
+                <Forms />
             </div>
         </>
     );

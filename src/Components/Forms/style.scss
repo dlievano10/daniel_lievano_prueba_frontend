@@ -1,0 +1,124 @@
+@import '../../style-general.scss';
+
+.select-form {
+    height: 100%;
+}
+
+.select {
+    border: 1px solid $color-primary;
+    display: flex;
+    align-items: center;
+    background-color: $color-white;
+    border-radius: 5px;
+    padding-left: 10px;
+};
+
+.spacer-select {
+    flex: 1 1 0%;
+    width: 40px;
+    place-self: stretch;
+}
+
+.checkbox-container {
+    background-color: $color-primary;
+    color: $color-white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.checkbox-item {
+    margin-top: 25px;
+    font-family: 'Roboto-Light';
+    margin-bottom: 15px;
+}
+
+.label-checkbox {
+    margin-left: 20px;
+}
+
+.radio-form {
+    background-color: $color-primary;
+    color: $color-white;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.radio-item {
+    margin-top: 30px;
+    font-family: 'Roboto-Light';
+    margin-bottom: 15px;
+}
+
+.label-radio {
+    margin-left: 40px;
+}
+
+.input-group {
+    flex-direction: column;
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.label-input {
+    font-family: 'Roboto';
+    margin-bottom: 5px;
+}
+
+.input-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.container-results {
+    background-color: $color-primary;
+    color: $color-white;
+    border-radius: 10px;
+    padding: 20px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.container-results>p {
+    margin-bottom: 5px;
+}
+
+.button-submit-form {
+    background-color: $color-secundary;
+    border: 2px solid $color-secundary;
+    color: $color-white;
+    font-family: 'Roboto';
+    padding: 10px;
+    width: 35%;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+.button-submit-form:hover {
+    background-color: transparent;
+    color: $color-secundary;
+}
+
+input[type="checkbox"]::selection {
+    background-color: $color-secundary;
+}
+
+input[type="checkbox"]:checked {
+    outline: 2px solid $color-secundary;
+}
+
+input[type="radio"]::checked::before {
+    background-color: $color-secundary !important;
+    border-color: $color-secundary !important
+}
+
